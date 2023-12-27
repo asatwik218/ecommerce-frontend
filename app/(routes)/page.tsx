@@ -6,6 +6,8 @@ import getBillboard from "@/actions/get-billboard";
 import getProducts from "@/actions/get-products";
 import ProductList from "@/components/ProductList";
 
+export const revalidate = 0;
+
 const HomePage = async () => {
 	const billboard = await getBillboard("a5a0397a-738a-4a6c-9ad8-25778d377b7d");
 
